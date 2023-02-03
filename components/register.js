@@ -86,7 +86,7 @@ export default function Register() {
                 opacity: !(name != '' && email != '') ? 0.7 : 1,
                 background: theme.util.gx('orange', 'red'),
               }}
-              href={`https://airtable.com/shrUb9NI0tm8hv8at?prefill_Contact+Email=${email}&prefill_Name=${name}`}
+              href={`https://airtable.com/shrUb9NI0tm8hv8at?prefill_Email=${email}&prefill_Name=${name}`}
             >
               Finish {10 - (name != '' ? 1 : 0) - (email != '' ? 1 : 0)} more
               fields to register.
