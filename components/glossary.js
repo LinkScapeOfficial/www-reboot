@@ -92,13 +92,13 @@ export default function Glossary() {
                 have fun.
               </Box>
               <Box>
-                Epoch is fully open source, funded by, and  run by the Hack Club community.
+                Reboot is fully open source, funded by, and  run by the Hack Club community.
                 Hack Clubbers are organising Reboot in public on the{" "}
                   <Link href="https://hackclub.com/slack" target="_blank">
                   Hack Club Slack
                 </Link>
                 {" "}and with fully transparent finances using{" "}
-                <Link href="https://bank.hackclub.com/reboot" target="_blank">
+                <Link href="https://bank.hackclub.com/reboot-2023" target="_blank">
                   Hack Club Bank
                 </Link>.
                 Everything from this website to Reboot's dinner menu, was
