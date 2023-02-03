@@ -50,12 +50,12 @@ export default function Glossary() {
                 <Image
                   alt="Placeholder"
                   sx={{ borderRadius: 4, objectFit: 'cover', height: '200px' }}
-                  src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Cyber_City_Skyline.jpeg"
+                  src="https://placeholder.pics/svg/291x200"
                 />
                 <Image
                   alt="Placeholder"
                   sx={{ borderRadius: 4, objectFit: 'cover', height: '200px' }}
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Cyber_City_View.jpg/2560px-Cyber_City_View.jpg"
+                  src="https://placeholder.pics/svg/346x200"
                 />
               </Grid>
             </Box>
