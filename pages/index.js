@@ -28,7 +28,7 @@ export default function Main() {
         color={`#FF4794`}
       />
       <h1 style={{display: 'none'}}>
-        Epoch - high school hackathon in Shanghai.
+        Reboot - high school hackathon in Shanghai.
       </h1>
       <Grid
         sx={{
@@ -103,7 +103,7 @@ export default function Main() {
                           0px 0px 150.8599853515625px rgba(0, 128, 0.7)`,
                 }}
               >
-                REBOOT
+                REB00T!
               </Heading>
               <Flex>
                 <Box
