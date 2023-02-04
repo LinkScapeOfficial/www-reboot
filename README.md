@@ -1,4 +1,4 @@
-# [`www-epoch`](https://reboot2023.com)
+# [`www-reboot`](https://reboot2023.com)
 
 Reboot's website, join us in the City of Dreams this New Year's!
 
