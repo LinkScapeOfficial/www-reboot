@@ -86,6 +86,11 @@ export default function Glossary() {
           >
             <Box>
               <Box mb={2}>
+                Everyone needs to follow the {" "}
+                <Link href="https://hackclub.com/conduct/" target="_blank">
+                  Hack Club Code of Conduct
+              </Box>
+              <Box mb={2}>
                 <b>Hack Club</b> is a worldwide community of high school
                 hackers. We’re artists, writers, engineers, tinkerers, campers,
                 filmmakers, volunteers. We make things. We help one another. We
