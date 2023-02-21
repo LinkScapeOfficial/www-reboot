@@ -89,6 +89,7 @@ export default function Glossary() {
                 Everyone needs to follow the {" "}
                 <Link href="https://hackclub.com/conduct/" target="_blank">
                   Hack Club Code of Conduct
+                </Link>
               </Box>
               <Box mb={2}>
                 <b>Hack Club</b> is a worldwide community of high school
