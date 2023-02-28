@@ -4,10 +4,6 @@ import Head from "next/head";
 import { Heading, Box, Text, Flex, Grid, ThemeProvider } from "theme-ui";
 import { Nav } from "../components/nav";
 import theme from "../lib/theme";
-/** @jsxImportSource theme-ui */
-
-import { ThemeProvider } from 'theme-ui';
-import theme from './theme';
 
 function App() {
   return (
