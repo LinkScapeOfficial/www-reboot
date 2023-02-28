@@ -170,6 +170,5 @@ function App() {
   </div>
 </ThemeProvider>
               
-    </>
   );
 }
