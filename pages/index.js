@@ -14,10 +14,11 @@ const Main = () => (
     />
     <Box sx={{ mt: [5, 6], textAlign: 'center' }}>
       <img src="https://cloud-c5ssvb2yg-hack-club-bot.vercel.app/0logo.png" height="200" />
+      <br />
       <Heading
         as="div"
         sx={{
-          fontSize: ["18vw", "9vw"],
+          fontSize: ["16vw", "8vw"],
           lineHeight: "0.8",
           fontWeight: 800,
           px: [3, 4],
