@@ -15,6 +15,9 @@ const Main = () => (
     <Box sx={{ mt: [5, 6], textAlign: 'center' }}>
       <img src="https://cloud-c5ssvb2yg-hack-club-bot.vercel.app/0logo.png" height="200" />
       <br />
+      <br />
+      <br />
+      <br />
       <Heading
         as="div"
         sx={{
