@@ -2,7 +2,6 @@ import Meta from "@hackclub/meta";
 import Flag from "../components/flag";
 import Head from "next/head";
 import { Heading, Box, Text, Flex, Button } from "theme-ui";
-import { Nav } from "../components/nav";
 
 const Main = () => (
   <>
@@ -13,7 +12,6 @@ const Main = () => (
       description="In Shanghai, this April, 30 teenage hackers will reboot hackathons in China."
       color={`#FF4794`}
     />
-    <Nav />
     <Box sx={{ mt: [5, 6], textAlign: 'center' }}>
       <Heading as="h1" variant="title">
         Reboot:
