@@ -54,18 +54,12 @@ const App = () => (
           py: 3,
         }}
       >
-        <Box sx={{ fontWeight: "bold", fontSize: 4 }}>Reboot Hackathon</Box>
-        <nav sx={{ display: "flex", alignItems: "center" }}>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#location">Location</NavLink>
-          <NavLink href="#register">Register</NavLink>
-          <NavLink href="#donate">Donate</NavLink>
-        </nav>
+        <Box sx={{ fontWeight: "bold", fontSize: 4 }}>Reboot</Box>
       </header>
       <main sx={{ padding: 3 }}>
-        <Section id="about" title="Reboot Hackathon">
+        <Section id="about" title="Reboot">
           <Text sx={{ mt: 3 }}>
-            It is the first in-person hackathon in China since COVID-19.
+            The first in-person hackathon in China since COVID-19.
           </Text>
           <Text sx={{ mt: 3 }}>
             Join us for a weekend of hacking, learning, and fun!
@@ -73,22 +67,10 @@ const App = () => (
           <Text sx={{ mt: 3 }}>Event Date: April 7th to 9th</Text>
         </Section>
         <Section id="location" title="Location">
-          <Text sx={{ mt: 3 }}>Microsoft's office at Shanghai Caohejing</Text>
+          <Text sx={{ mt: 3 }}>Microsoft Shanghai (Caohejing)</Text>
         </Section>
-        <Section id="register" title="Register">
-          <Text sx={{ mt: 3 }}>
-            Register now to secure your spot in the hackathon!
-          </Text>
-          <Button sx={{ mt: 3 }}>Register Now</Button>
-        </Section>
-        <Section id="donate" title="Donate">
-          <Text sx={{ mt: 3 }}>Help support the hackathon</Text>
-          <Text sx={{ mt: 3 }}>
-            Your donation will go towards funding prizes, food, and supplies
-            for the event.
-          </Text>
-          <Button sx={{ mt: 3 }}>Donate Now</Button>
-        </Section>
+        <Button sx={{ mt: 3 }}>Register</Button>
+        <Button sx={{ mt: 3 }}>Donate</Button>
       </main>
       <footer
         sx={{
@@ -102,13 +84,7 @@ const App = () => (
         }}
       >
 <Box>
-          <Text>© 2023 Reboot Hackathon</Text>
-          <Flex>
-            <NavLink href="#about">About</NavLink>
-            <NavLink href="#location">Location</NavLink>
-            <NavLink href="#register">Register</NavLink>
-            <NavLink href="#donate">Donate</NavLink>
-          </Flex>
+          <Text>© 2023 LinkScape Foundation & Hack Club</Text>
         </Box>
       </footer>
     </Box>
