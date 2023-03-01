@@ -17,7 +17,7 @@ const Main = () => (
     <Box sx={{ mt: [5, 6], textAlign: 'center' }}>
       <Heading as="h1" variant="title">
         Reboot:
-        < br />
+        <br />
         The First In-Person Hackathon in China Since Pandemic
       </Heading>
       <Box sx={{ fontSize: [3, 4], mt: [3, 4], mb: [4, 5] }}>
