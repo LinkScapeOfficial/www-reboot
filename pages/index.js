@@ -12,8 +12,8 @@ const Main = () => (
       description="In Shanghai, this April, 30 teenage hackers will reboot hackathons in China."
       color={`#FF4794`}
     />
-    <Box sx={{ mt: [3, 4], textAlign: 'center' }}>
-      <img src="https://cloud-c5ssvb2yg-hack-club-bot.vercel.app/0logo.png" height="500" />
+    <Box sx={{ mt: [5, 6], textAlign: 'center' }}>
+      <img src="https://cloud-c5ssvb2yg-hack-club-bot.vercel.app/0logo.png" height="200" />
       <Heading as="h1" variant="title">
         Reboot
       </Heading>
