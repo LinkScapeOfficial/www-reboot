@@ -18,8 +18,8 @@ const Main = () => (
         as="div"
         sx={{
           fontSize: ["24vw", "12vw"],
-          lineHeight: "0.8",
-          fontWeight: 400,
+          lineHeight: "0.6",
+          fontWeight: 800,
           px: [3, 4],
           mb: 2,
           color: "white",
