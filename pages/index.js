@@ -1,7 +1,7 @@
 import Meta from "@hackclub/meta";
 import Flag from "../components/flag";
 import Head from "next/head";
-import { Heading, Box, Text, Flex } from "theme-ui";
+import { Heading, Box, Text, Flex, Buttons } from "theme-ui";
 import { Nav } from "../components/nav";
 
 const Main = () => (
@@ -29,14 +29,14 @@ const Main = () => (
       </Box>
       <Flex sx={{ justifyContent: 'center' }}>
         <Box sx={{ mr: 3 }}>
-          <Button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'primary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'secondary' } }}>
+          <Buttons sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'primary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'secondary' } }}>
             Register
-          </Button>
+          </Buttons>
         </Box>
         <Box>
-          <Button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'secondary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'primary' } }}>
+          <Buttons sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'secondary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'primary' } }}>
             Donate
-          </Button>
+          </Buttons>
         </Box>
       </Flex>
     </Box>
