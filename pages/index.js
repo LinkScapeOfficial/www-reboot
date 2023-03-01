@@ -47,16 +47,16 @@ const Main = () => (
       <Flex sx={{ justifyContent: 'center' }}>
         <Box sx={{ mr: 3 }}>
           <a href="https://airtable.com/shrUb9NI0tm8hv8at">
-            <button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'primary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'secondary' } }}>
+            <Button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'primary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'secondary' } }}>
               Register
-            </button>
+            </Button>
           </a>
         </Box>
         <Box>
           <a href="https://bank.hackclub.com/donations/start/reboot-2023">
-            <button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'secondary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'primary' } }}>
+            <Button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'secondary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'primary' } }}>
               Donate
-            </button>
+            </Button>
           </a>
         </Box>
       </Flex>
