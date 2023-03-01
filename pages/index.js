@@ -56,7 +56,7 @@ const App = () => (
       >
         <Box sx={{ fontWeight: "bold", fontSize: 10 }}>Reboot</Box>
       </header>
-      <main sx={{ padding: 8 }}>
+      <main sx={{ padding: 4 }}>
         <Section id="about">
           <Text sx={{ mt: 8 }}>
             The first in-person hackathon in China since COVID-19.
