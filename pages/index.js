@@ -13,10 +13,9 @@ const Main = () => (
       color={`#FF4794`}
     />
     <Box sx={{ mt: [3, 4], textAlign: 'center' }}>
+      <img src="https://cloud-c5ssvb2yg-hack-club-bot.vercel.app/0logo.png" height="500" />
       <Heading as="h1" variant="title">
-        Reboot:
-        <br />
-        The First In-Person Hackathon in China Since Pandemic
+        Reboot
       </Heading>
       <Box sx={{ fontSize: [3, 4], mt: [3, 4], mb: [4, 5] }}>
         <Text>
