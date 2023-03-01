@@ -54,36 +54,39 @@ const App = () => (
           py: 3,
         }}
       >
-        <Box sx={{ fontWeight: "bold", fontSize: 4 }}>Reboot</Box>
+        <Box sx={{ fontWeight: "bold", fontSize: 10 }}>Reboot</Box>
       </header>
-      <main sx={{ padding: 3 }}>
-        <Section id="about" title="Reboot">
-          <Text sx={{ mt: 3 }}>
+      <main sx={{ padding: 8 }}>
+        <Section id="about">
+          <Text sx={{ mt: 8 }}>
             The first in-person hackathon in China since COVID-19.
           </Text>
-          <Text sx={{ mt: 3 }}>
+          <br />
+          <Text sx={{ mt: 8 }}>
             Join us for a weekend of hacking, learning, and fun!
           </Text>
-          <Text sx={{ mt: 3 }}>Event Date: April 7th to 9th</Text>
+          <Box sx={{ fontWeight: "bold", fontSize: 10 }}>Event Date</Box>
+          <Text sx={{ mt: 8 }}>Event Date: April 7th to 9th</Text>
         </Section>
-        <Section id="location" title="Location">
-          <Text sx={{ mt: 3 }}>Microsoft Shanghai (Caohejing)</Text>
+        <Section id="location">
+          <Box sx={{ fontWeight: "bold", fontSize: 6 }}>Location</Box>
+          <Text sx={{ mt: 8 }}>Microsoft Shanghai (Caohejing)</Text>
         </Section>
-        <Button sx={{ mt: 3 }}>Register</Button>
-        <Button sx={{ mt: 3 }}>Donate</Button>
+        <Button sx={{ mt: 8 }}>Register</Button>
+        <Button sx={{ mt: 8 }}>Donate</Button>
       </main>
       <footer
         sx={{
           borderTop: "1px solid",
           borderColor: "gray.3",
           py: 3,
-          mt: 4,
+          mt: 6,
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
         }}
       >
-<Box>
+        <Box>
           <Text>© 2023 LinkScape Foundation & Hack Club</Text>
         </Box>
       </footer>
