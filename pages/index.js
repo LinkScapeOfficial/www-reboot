@@ -8,12 +8,12 @@ import theme from "../lib/theme";
 
 const Main = () => (
   <Meta
-      as={Head}
-      name="Reboot"
-      title="Reboot - First hackathon in China since pandemic"
-      description="In Shanghai, this April, 30 teenage hackers will reboot hackathons in China." // page description
-      color={`#FF4794`}
-    />
+    as={Head}
+    name="Reboot"
+    title="Reboot - First hackathon in China since pandemic"
+    description="In Shanghai, this April, 30 teenage hackers will reboot hackathons in China." // page description
+    color={`#FF4794`}
+  />
   <div sx={{ fontFamily: 'body', color: 'text', bg: 'background' }}>
     <header sx={{ bg: 'primary', color: 'background' }}>
       <div sx={{ variant: 'containers.page' }}>
@@ -74,4 +74,4 @@ const theme = {
   },
 };
 
-export default App;
+export default Main;
