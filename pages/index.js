@@ -157,14 +157,11 @@ export default function Main() {
                 <Box> Doors open at 6PM; 44-hours long </Box>
               </Flex>
             </Flex>
-            <ScrollHint mobile />
           </Grid>
           <Flex sx={{flexGrow: 1, alignItems: 'flex-end', mb: 5}}>
-          <ScrollHint mobile={false} /></Flex>
         </Flex>
 
       </Grid>
-      </Layout>
     </>
   );
 }
