@@ -32,13 +32,11 @@ const Main = () => (
           <Button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'primary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'secondary' } }}>
             Register
           </Button>
-          </a>
         </Box>
         <Box>
           <Button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'secondary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'primary' } }}>
             Donate
           </Button>
-          </a>
         </Box>
       </Flex>
     </Box>
