@@ -1,97 +1,170 @@
 import Meta from "@hackclub/meta";
+import Flag from "../components/flag";
 import Head from "next/head";
-import {
-  Heading,
-  Box,
-  Text,
-  Flex,
-  Grid,
-  ThemeProvider,
-  Button,
-} from "theme-ui";
+import Layout from "../components/layout";
+import Foreword from "../components/forward";
+import Hackathon from "../components/hackathon";
+import Expectations from "../components/expectations";
+import Register from "../components/register";
+import Glossary from "../components/glossary";
+import ScrollHint from "../components/scroll-hint";
+
+import { Heading, Box, Text, Flex, Grid } from "theme-ui";
 import { Nav } from "../components/nav";
 import theme from "../lib/theme";
 
-const NavLink = ({ href, children }) => (
-  <a href={href} sx={{ variant: "navLink" }}>
-    {children}
-  </a>
-);
-
-const Section = ({ id, title, children }) => (
-  <section
-    id={id}
-    sx={{
-      borderBottom: "1px solid",
-      borderColor: "gray.3",
-      pb: 4,
-    }}
-  >
-    <Heading as="h2" sx={{ variant: "subheading" }}>
-      {title}
-    </Heading>
-    {children}
-  </section>
-);
-
-const App = () => (
-  <ThemeProvider theme={theme}>
-    <Box
-      sx={{
-        maxWidth: "960px",
-        margin: "0 auto",
-        fontFamily: "body",
-        lineHeight: "body",
-      }}
-    >
-      <header
+export default function Main() {
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+      </Head>
+      <Nav />
+      <Meta
+        as={Head}
+        name="Reboot"
+        title="Reboot - First hackathon in China since 2019"
+        description="In Shanghai, this April, 50+ teenage hackers will reboot hackathons in China." // page description
+        color={`#FF4794`}
+      />
+      <h1 style={{display: 'none'}}>
+        Reboot - high school hackathon in Shanghai.
+      </h1>
+      <Grid
         sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          borderBottom: "1px solid",
-          borderColor: "gray.3",
-          py: 3,
+          height: "100vh",
+          backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5) 2.96%, rgba(0, 0, 0,0.9) 100%), url(/assemble.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "bottom",
         }}
       >
-        <Box sx={{ fontWeight: "bold", fontSize: 10 }}>Reboot</Box>
-      </header>
-      <main sx={{ padding: 4 }}>
-        <Section id="about">
-          <Text sx={{ mt: 8 }}>
-            The first in-person hackathon in China since COVID-19.
-          </Text>
-          <br />
-          <Text sx={{ mt: 8 }}>
-            Join us for a weekend of hacking, learning, and fun!
-          </Text>
-          <Box sx={{ fontWeight: "bold", fontSize: 10 }}>Event Date</Box>
-          <Text sx={{ mt: 8 }}>Event Date: April 7th to 9th</Text>
-        </Section>
-        <Section id="location">
-          <Box sx={{ fontWeight: "bold", fontSize: 6 }}>Location</Box>
-          <Text sx={{ mt: 8 }}>Microsoft Shanghai (Caohejing)</Text>
-        </Section>
-        <Button sx={{ mt: 8 }}>Register</Button>
-        <Button sx={{ mt: 8 }}>Donate</Button>
-      </main>
-      <footer
-        sx={{
-          borderTop: "1px solid",
-          borderColor: "gray.3",
-          py: 3,
-          mt: 6,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
-        <Box>
-          <Text>© 2023 LinkScape Foundation & Hack Club</Text>
-        </Box>
-      </footer>
-    </Box>
-  </ThemeProvider>
-);
+        <Flex sx={{ height: "100%", flexDirection: 'column' }}>
+          <Grid
+            columns={[1, 2]}
+            gap={5}
+            py={[3, 5]}
+            px={[3, 5]}
+            sx={{ width: "100%" }}
+          >
+            <Box
+              sx={{
+                textAlign: "center",
+                width: ["100%", "min-content"],
+                mt: [4, 0],
+                fontFamily: `"IBM Plex Mono"!important`,
+                mb: [-3, 0],
+              }}
+            >
+              <Flex>
+                <Box
+                  sx={{
+                    height: "18.42px",
+                    width: "23.61px",
+                    borderTop: "1px solid",
+                    borderLeft: "1px solid",
+                    borderColor: "rgba(175, 175, 175, 1)",
+                  }}
+                />
+                <Box sx={{ flexGrow: 1 }} />
+                <Box
+                  sx={{
+                    height: "18.42px",
+                    width: "23.61px",
+                    borderTop: "1px solid",
+                    borderRight: "1px solid",
+                    borderColor: "rgba(175, 175, 175, 1)",
+                  }}
+                />
+              </Flex>
+              <Box
+                sx={{
+                  fontSize: [2, 4],
+                  mb: 3,
+                  px: 4,
+                  zIndex: 999,
+                  position: "relative",
+                }}
+              >
+                HACKERS,
+              </Box>
+              <Heading
+                as="div"
+                sx={{
+                  fontSize: ["24vw", "12vw"],
+                  lineHeight: "0.8",
+                  fontWeight: 800,
+                  px: [3, 4],
+                  mb: 2,
+                  color: "white",
+                  fontFamily: '"Fira Code"',
+                  textShadow: `0px 0px 21.4900016784668px rgba(0, 128, 1),
+                          0px 0px 32.9800033569336px rgba(0, 128, 0.9),
+                          0px 0px 105.42999267578125px rgba(0, 128, 0.8),
+                          0px 0px 150.8599853515625px rgba(0, 128, 0.7)`,
+                }}
+              >
+                REB00T!
+              </Heading>
+              <Flex>
+                <Box
+                  sx={{
+                    height: "18.42px",
+                    width: "23.61px",
+                    borderBottom: "1px solid",
+                    borderLeft: "1px solid",
+                    borderColor: "rgba(175, 175, 175, 1)",
+                  }}
+                />
+                <Box sx={{ flexGrow: 1 }} />
+                <Box
+                  sx={{
+                    height: "18.42px",
+                    width: "23.61px",
+                    borderBottom: "1px solid",
+                    borderRight: "1px solid",
+                    borderColor: "rgba(175, 175, 175, 1)",
+                  }}
+                />
+              </Flex>
+            </Box>
+            <Flex
+              sx={{
+                alignItems: "center",
+                justifyContent: ["center", `flex-end`],
+              }}
+            >
+              <Flex
+                sx={{
+                  flexDirection: "column",
+                  gap: 3,
+                  fontSize: ["6vw", 3],
+                  textAlign: ["center", "right"],
+                  textTransform: "uppercase",
+                  fontFamily: `"Fira Code Zero", "IBM Plex Mono"`,
+                  maxWidth: "75vw",
+                }}
+              >
+                <Box
+                  sx={{
+                    fontWeight: 800,
+                    maxWidth: ["60vw", "100vw"],
+                    margin: ["auto", 0]
+                  }}
+                >
+                  Apr. 07 2023 to Apr. 09 2023
+                </Box>
+                <Box sx={{ fontWeight: 800 }}><b>Shanghai, China</b> </Box>
+                <Box> Doors open at 6PM; 44-hours long </Box>
+              </Flex>
+            </Flex>
+            <ScrollHint mobile />
+          </Grid>
+          <Flex sx={{flexGrow: 1, alignItems: 'flex-end', mb: 5}}>
+          <ScrollHint mobile={false} /></Flex>
+        </Flex>
 
-export default App;
+      </Grid>
+      </Layout>
+    </>
+  );
+}
