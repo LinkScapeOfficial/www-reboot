@@ -1,7 +1,7 @@
 import Meta from "@hackclub/meta";
 import Flag from "../components/flag";
 import Head from "next/head";
-import { Heading, Box, Text, Flex, Grid } from "theme-ui";
+import { Heading, Box, Text, Flex } from "theme-ui";
 import { Nav } from "../components/nav";
 
 const Main = () => (
@@ -44,26 +44,7 @@ const Main = () => (
       </Flex>
     </Box>
     <Flag />
-    <Box sx={{ mt: [5, 6], textAlign: 'center' }}>
-      <Heading as="h2" variant="headline" sx={{ mb: [3, 4] }}>
-        Sponsors
-      </Heading>
-      <Grid columns={[1, 2, 3]} gap={4} sx={{ justifyContent: 'center' }}>
-        <Box sx={{ textAlign: 'center' }}>
-          <img src="/sponsors/microsoft.png" alt="Microsoft" sx={{ maxWidth: [100, 150], mb: 2 }} />
-          <Text variant="subtitle">Microsoft</Text>
-        </Box>
-        <Box sx={{ textAlign: 'center' }}>
-          <img src="/sponsors/hackclub.png" alt="Hack Club" sx={{ maxWidth: [100, 150], mb: 2 }} />
-          <Text variant="subtitle">Hack Club</Text>
-        </Box>
-        <Box sx={{ textAlign: 'center' }}>
-          <img src="/sponsors/linkscape.png" alt="LinkScape Foundation" sx={{ maxWidth: [100, 150], mb: 2 }} />
-          <Text variant="subtitle">LinkScape Foundation</Text>
-        </Box>
-      </Grid>
-    </Box>
-  },
-};
+  </>
+);
 
 export default Main;
