@@ -19,7 +19,7 @@ const Main = () => (
         sx={{
           fontSize: ["24vw", "12vw"],
           lineHeight: "0.8",
-          fontWeight: 800,
+          fontWeight: 400,
           px: [3, 4],
           mb: 2,
           color: "white",
@@ -30,7 +30,7 @@ const Main = () => (
                   0px 0px 150.8599853515625px rgba(0, 128, 0.7)`,
         }}
        >
-         REB00T!
+         REB00T
       </Heading>
       <Box sx={{ fontSize: [3, 4], mt: [3, 4], mb: [4, 5] }}>
         <Text>
