@@ -16,7 +16,9 @@ const Main = () => (
     <Nav />
     <Box sx={{ mt: [5, 6], textAlign: 'center' }}>
       <Heading as="h1" variant="title">
-        Reboot: The First In-Person Hackathon in China Since Pandemic
+        Reboot:
+        < br />
+        The First In-Person Hackathon in China Since Pandemic
       </Heading>
       <Box sx={{ fontSize: [3, 4], mt: [3, 4], mb: [4, 5] }}>
         <Text>
@@ -24,7 +26,7 @@ const Main = () => (
         </Text>
         <br />
         <Text>
-          Location: Shanghai, Microsoft Office (Caohejing)
+          Location: Microsoft Shanghai (Caohejing)
         </Text>
       </Box>
       <Flex sx={{ justifyContent: 'center' }}>
