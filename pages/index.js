@@ -20,7 +20,7 @@ const Main = () => (
       <Heading
         as="div"
         sx={{
-          fontSize: ["16vw", "8vw"],
+          fontSize: ["12vw", "6vw"],
           lineHeight: "0.8",
           fontWeight: 800,
           px: [3, 4],
