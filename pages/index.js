@@ -22,23 +22,22 @@ const Main = () => (
         <Text>
           Date: April 7th to 9th, 2023
         </Text>
+        <br />
         <Text>
           Location: Shanghai, Microsoft Office (Caohejing)
         </Text>
       </Box>
       <Flex sx={{ justifyContent: 'center' }}>
         <Box sx={{ mr: 3 }}>
-          <a href="#">
-            <button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'primary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'secondary' } }}>
-              Register
-            </button>
+          <Button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'primary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'secondary' } }}>
+            Register
+          </Button>
           </a>
         </Box>
         <Box>
-          <a href="#">
-            <button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'secondary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'primary' } }}>
-              Donate
-            </button>
+          <Button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'secondary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'primary' } }}>
+            Donate
+          </Button>
           </a>
         </Box>
       </Flex>
