@@ -12,7 +12,7 @@ const Main = () => (
       description="In Shanghai, this April, 30 teenage hackers will reboot hackathons in China."
       color={`#FF4794`}
     />
-    <Box sx={{ mt: [5, 6], textAlign: 'center' }}>
+    <Box sx={{ mt: [3, 4], textAlign: 'center' }}>
       <Heading as="h1" variant="title">
         Reboot:
         <br />
