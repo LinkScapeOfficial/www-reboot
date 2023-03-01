@@ -37,7 +37,6 @@ const Main = () => (
       </Heading>
       <Box sx={{ fontSize: [3, 4], mt: [3, 4], mb: [4, 5] }}>
         <br />
-        <br />
         <Text>
           Date: April 7th to 9th, 2023
         </Text>
