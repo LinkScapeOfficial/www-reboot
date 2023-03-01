@@ -14,8 +14,23 @@ const Main = () => (
     />
     <Box sx={{ mt: [5, 6], textAlign: 'center' }}>
       <img src="https://cloud-c5ssvb2yg-hack-club-bot.vercel.app/0logo.png" height="200" />
-      <Heading as="h1" variant="title">
-        Reboot
+      <Heading
+        as="div"
+        sx={{
+          fontSize: ["24vw", "12vw"],
+          lineHeight: "0.8",
+          fontWeight: 800,
+          px: [3, 4],
+          mb: 2,
+          color: "white",
+          fontFamily: '"Fira Code"',
+          textShadow: `0px 0px 21.4900016784668px rgba(0, 128, 1),
+                  0px 0px 32.9800033569336px rgba(0, 128, 0.9),
+                  0px 0px 105.42999267578125px rgba(0, 128, 0.8),
+                  0px 0px 150.8599853515625px rgba(0, 128, 0.7)`,
+        }}
+       >
+         REB00T!
       </Heading>
       <Box sx={{ fontSize: [3, 4], mt: [3, 4], mb: [4, 5] }}>
         <Text>
