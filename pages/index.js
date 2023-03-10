@@ -1,7 +1,7 @@
 import Meta from "@hackclub/meta";
 import Flag from "../components/flag";
 import Head from "next/head";
-import { Heading, Box, Text, Flex, Button } from "theme-ui";
+import { Heading, Box, Text, Flex, Button, Styled } from "theme-ui";
 import { jsx, Styled, ThemeProvider } from "theme-ui";
 
 const Main = () => (
