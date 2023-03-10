@@ -41,7 +41,7 @@ const Main = () => (
         </Text>
         <br />
         <Text>
-          Location: Microsoft Shanghai (Caohejing)
+          Location: Microsoft Reactor Shanghai (Caohejing)
         </Text>
       </Box>
       <Flex sx={{ justifyContent: 'center' }}>
@@ -61,6 +61,68 @@ const Main = () => (
         </Box>
       </Flex>
     </Box>
+      <div sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <Styled.h1>Event Schedule</Styled.h1>
+        <table
+          sx={{
+            borderCollapse: 'collapse',
+            width: '100%',
+            maxWidth: '600px',
+            textAlign: 'center',
+          }}
+        >
+          <thead>
+            <tr
+              sx={{
+                backgroundColor: 'primary',
+                color: 'background',
+                borderRadius: '10px',
+              }}
+            >
+              <th sx={{ py: 2 }}>Time</th>
+              <th sx={{ py: 2 }}>Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td sx={{ py: 3 }}>8:30</td>
+              <td sx={{ py: 3 }}>Sign In</td>
+            </tr>
+            <tr>
+              <td sx={{ py: 3 }}>9:00</td>
+              <td sx={{ py: 3 }}>Kick Off</td>
+            </tr>
+            <tr>
+              <td sx={{ py: 3 }}>9:30</td>
+              <td sx={{ py: 3 }}>Team Formation</td>
+            </tr>
+            <tr>
+              <td sx={{ py: 3 }}>10:00</td>
+              <td sx={{ py: 3 }}>Start Hacking</td>
+            </tr>
+            <tr>
+              <td sx={{ py: 3 }}>12:00</td>
+              <td sx={{ py: 3 }}>Lunch</td>
+            </tr>
+            <tr>
+              <td sx={{ py: 3 }}>13:00</td>
+              <td sx={{ py: 3 }}>Hacking Continues</td>
+            </tr>
+            <tr>
+              <td sx={{ py: 3 }}>18:00</td>
+              <td sx={{ py: 3 }}>Dinner</td>
+            </tr>
+            <tr>
+              <td sx={{ py: 3 }}>19:00</td>
+              <td sx={{ py: 3 }}>Presentations and Judging</td>
+            </tr>
+            <tr>
+              <td sx={{ py: 3 }}>20:00</td>
+              <td sx={{ py: 3 }}>Event Ends</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     <Flag />
   </>
 );
