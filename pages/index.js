@@ -1,19 +1,17 @@
-import Meta from "@hackclub/meta";
 import Flag from "../components/flag";
-import Head from "next/head";
 import { Heading, Box, Text, Flex, Button } from "theme-ui";
-import { Styled } from 'theme-ui'; // add this line to import Styled module
-
 
 const Main = () => (
   <>
-    <Meta
-      as={Head}
-      name="Reboot"
-      title="Reboot - First hackathon in China since pandemic"
-      description="In Shanghai, this April, 30 teenage hackers will reboot hackathons in China."
-      color={`#FF4794`}
-    />
+    <Head>
+      <title>Reboot - First hackathon in China since pandemic</title>
+      <meta
+        name="description"
+        content="In Shanghai, this April, 30 teenage hackers will reboot hackathons in China."
+      />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="color" content="#FF4794" />
+    </Head>
     <Box sx={{ mt: [5, 6], textAlign: 'center' }}>
       <img src="https://cloud-c5ssvb2yg-hack-club-bot.vercel.app/0logo.png" height="200" />
       <br />
