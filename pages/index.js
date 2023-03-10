@@ -2,6 +2,8 @@ import Meta from "@hackclub/meta";
 import Flag from "../components/flag";
 import Head from "next/head";
 import { Heading, Box, Text, Flex, Button } from "theme-ui";
+import { Styled } from 'theme-ui'; // add this line to import Styled module
+
 
 const Main = () => (
   <>
