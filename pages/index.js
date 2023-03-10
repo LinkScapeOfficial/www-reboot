@@ -1,3 +1,4 @@
+import { Head } from 'next/head';
 import Flag from "../components/flag";
 import { Heading, Box, Text, Flex, Button } from "theme-ui";
 
