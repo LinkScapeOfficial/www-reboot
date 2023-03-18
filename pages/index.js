@@ -1,21 +1,25 @@
-import { Head } from 'next/head';
+import Meta from "@hackclub/meta";
 import Flag from "../components/flag";
-import { Heading, Box, Text, Flex, Button } from "theme-ui";
-import { Styled } from "@emotion/styled";
+import Head from "next/head";
+import Image from "next/image";
+import schedule from "../public/rebootsched.svg";
+import { Heading, Box, Text, Flex, Button, Container, Link } from "theme-ui";
+
 
 const Main = () => (
   <>
-    <Head>
-      <title>Reboot - First hackathon in China since pandemic</title>
-      <meta
-        name="description"
-        content="In Shanghai, this April, 30 teenage hackers will reboot hackathons in China."
+    <Meta
+      as={Head}
+      name="Reboot"
+      title="Reboot - First hackathon in China since pandemic"
+      description="In Shanghai, this April, 30 teenage hackers will reboot hackathons in China."
+      color={`#FF4794`}
+    />
+    <Box sx={{ mt: [5, 6], textAlign: "center" }}>
+      <img
+        src="https://cloud-c5ssvb2yg-hack-club-bot.vercel.app/0logo.png"
+        height="200"
       />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="color" content="#FF4794" />
-    </Head>
-    <Box sx={{ mt: [5, 6], textAlign: 'center' }}>
-      <img src="https://cloud-c5ssvb2yg-hack-club-bot.vercel.app/0logo.png" height="200" />
       <br />
       <br />
       <br />
@@ -34,97 +38,76 @@ const Main = () => (
                   0px 0px 105.42999267578125px rgba(0, 128, 0.8),
                   0px 0px 150.8599853515625px rgba(0, 128, 0.7)`,
         }}
-       >
-         REB00T
+      >
+        REB00T
       </Heading>
       <Box sx={{ fontSize: [3, 4], mt: [3, 4], mb: [4, 5] }}>
-        <Text>
-          Date: April 7th to 9th, 2023
-        </Text>
+        <Text>Date: April 9th, 2023</Text>
         <br />
-        <Text>
-          Location: Microsoft Reactor Shanghai (Caohejing)
-        </Text>
+        <Text>Location: Microsoft Reactor Shanghai (Caohejing)</Text>
       </Box>
-      <Flex sx={{ justifyContent: 'center' }}>
+      <Flex sx={{ justifyContent: "center" }}>
         <Box sx={{ mr: 3 }}>
           <a href="https://airtable.com/shrUb9NI0tm8hv8at">
-            <Button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'primary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'secondary' } }}>
+            <Button
+              sx={{
+                fontSize: [2, 3],
+                px: [4, 5],
+                py: [2, 3],
+                bg: "primary",
+                color: "background",
+                borderRadius: "default",
+                cursor: "pointer",
+                "&:hover": { bg: "secondary" },
+              }}
+            >
               Register
             </Button>
           </a>
         </Box>
         <Box>
           <a href="https://bank.hackclub.com/donations/start/reboot-2023">
-            <Button sx={{ fontSize: [2, 3], px: [4, 5], py: [2, 3], bg: 'secondary', color: 'background', borderRadius: 'default', cursor: 'pointer', '&:hover': { bg: 'primary' } }}>
+            <Button
+              sx={{
+                fontSize: [2, 3],
+                px: [4, 5],
+                py: [2, 3],
+                bg: "secondary",
+                color: "background",
+                borderRadius: "default",
+                cursor: "pointer",
+                "&:hover": { bg: "primary" },
+              }}
+            >
               Donate
             </Button>
           </a>
         </Box>
       </Flex>
     </Box>
-    <div sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <Styled.h1>Event Schedule</Styled.h1>
-      <table
-        sx={{
-          borderCollapse: 'collapse',
-          width: '100%',
-          maxWidth: '600px',
-          textAlign: 'center',
-        }}
-      >
-        <thead>
-          <tr
-            sx={{
-              backgroundColor: 'primary',
-              color: 'background',
-              borderRadius: '10px',
-            }}
-          >
-            <th sx={{ py: 2 }}>Time</th>
-            <th sx={{ py: 2 }}>Activity</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td sx={{ py: 3 }}>8:30</td>
-            <td sx={{ py: 3 }}>Sign In</td>
-          </tr>
-          <tr>
-            <td sx={{ py: 3 }}>9:00</td>
-            <td sx={{ py: 3 }}>Kick Off</td>
-          </tr>
-          <tr>
-            <td sx={{ py: 3 }}>9:30</td>
-            <td sx={{ py: 3 }}>Team Formation</td>
-          </tr>
-          <tr>
-            <td sx={{ py: 3 }}>10:00</td>
-            <td sx={{ py: 3 }}>Start Hacking</td>
-          </tr>
-          <tr>
-            <td sx={{ py: 3 }}>12:00</td>
-            <td sx={{ py: 3 }}>Lunch</td>
-          </tr>
-          <tr>
-            <td sx={{ py: 3 }}>13:00</td>
-            <td sx={{ py: 3 }}>Hacking Continues</td>
-          </tr>
-          <tr>
-            <td sx={{ py: 3 }}>18:00</td>
-            <td sx={{ py: 3 }}>Dinner</td>
-          </tr>
-          <tr>
-            <td sx={{ py: 3 }}>19:00</td>
-            <td sx={{ py: 3 }}>Presentations and Judging</td>
-          </tr>
-          <tr>
-            <td sx={{ py: 3 }}>20:00</td>
-            <td sx={{ py: 3 }}>Event Ends</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <Container
+      sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+      mt={4}
+    >
+      <Heading variant="lead">Event Schedule</Heading>
+      <Image src={schedule}/>
+      <Text mb={1}>☝️ Powered by <Link href="https://github.com/JettChenT/timeblok">timeblok</Link> language</Text>
+      {/* Button to download the corresponding ics file stored in public/reboot.ics */}
+      <a href="reboot.ics">
+        <Button
+          mb={4}
+          sx={{
+            bg: "primary",
+            color: "background",
+            borderRadius: "default",
+            cursor: "pointer",
+            "&:hover": { bg: "secondary" },
+          }}
+        >
+          Download Event
+        </Button>
+      </a>
+    </Container>
     <Flag />
   </>
 );
