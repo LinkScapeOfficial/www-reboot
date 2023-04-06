@@ -42,7 +42,7 @@ const Main = () => (
         REB00T
       </Heading>
       <Box sx={{ fontSize: [3, 4], mt: [3, 4], mb: [4, 5] }}>
-        <Text>Date: April 9th, 2023</Text>
+        <Text>Date: May 27th, 2023</Text>
         <br />
         <Text>Location: Microsoft Reactor Shanghai (Caohejing)</Text>
       </Box>
