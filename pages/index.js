@@ -10,9 +10,9 @@ const Main = () => (
   <>
     <Meta
       as={Head}
-      name="Reboot"
-      title="Reboot - First hackathon in China since pandemic"
-      description="In Shanghai, this April, 30 teenage hackers will reboot hackathons in China."
+      name="Shanghai Hacks 2023"
+      title="Shanghai Hacks 2023 - First hackathon in China since pandemic"
+      description="First hackathon in China since pandemic."
       color={`#FF4794`}
     />
     <Box sx={{ mt: [5, 6], textAlign: "center" }}>
@@ -23,28 +23,13 @@ const Main = () => (
       <br />
       <br />
       <br />
-      <Heading
-        as="div"
-        sx={{
-          fontSize: ["12vw", "6vw"],
-          lineHeight: "0.8",
-          fontWeight: 800,
-          px: [3, 4],
-          mb: 2,
-          color: "white",
-          fontFamily: '"Fira Code"',
-          textShadow: `0px 0px 21.4900016784668px rgba(0, 128, 1),
-                  0px 0px 32.9800033569336px rgba(0, 128, 0.9),
-                  0px 0px 105.42999267578125px rgba(0, 128, 0.8),
-                  0px 0px 150.8599853515625px rgba(0, 128, 0.7)`,
-        }}
-      >
-        REB00T
+      <Heading>
+        Shanghai Hacks 2023
       </Heading>
       <Box sx={{ fontSize: [3, 4], mt: [3, 4], mb: [4, 5] }}>
         <Text>Date: May 27th, 2023</Text>
         <br />
-        <Text>Location: Microsoft Reactor Shanghai (Caohejing)</Text>
+        <Text>Location: Unsure</Text>
       </Box>
       <Flex sx={{ justifyContent: "center" }}>
         <Box sx={{ mr: 3 }}>
