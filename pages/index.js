@@ -11,8 +11,8 @@ const Main = () => (
     <Meta
       as={Head}
       name="Shanghai Hacks 2023"
-      title="Shanghai Hacks 2023 - First hackathon in China since pandemic"
-      description="First hackathon in China since pandemic."
+      title="Shanghai Hacks 2023"
+      description="A in-person hackathon in Shanghai, China."
       color={`#FF4794`}
     />
     <Box sx={{ mt: [5, 6], textAlign: "center" }}>
@@ -27,9 +27,9 @@ const Main = () => (
         Shanghai Hacks 2023
       </Heading>
       <Box sx={{ fontSize: [3, 4], mt: [3, 4], mb: [4, 5] }}>
-        <Text>Date: May 27th, 2023</Text>
+        <Text>Date: June, 2023</Text>
         <br />
-        <Text>Location: Unsure</Text>
+        <Text>Location: Huili School Shanghai</Text>
       </Box>
       <Flex sx={{ justifyContent: "center" }}>
         <Box sx={{ mr: 3 }}>
